@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo 'nannna'
+        echo 'nafnna'
       }
     }
 
@@ -11,13 +11,13 @@ pipeline {
       parallel {
         stage('Test') {
           steps {
-            echo 'testtet'
+            echo 'testtettt'
           }
         }
 
         stage('Test1') {
           steps {
-            echo 'tete'
+            echo 'tee'
           }
         }
 
