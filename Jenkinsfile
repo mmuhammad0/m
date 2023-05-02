@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo 'nanna'
+        echo 'nannna'
       }
     }
 
@@ -11,13 +11,13 @@ pipeline {
       parallel {
         stage('Test') {
           steps {
-            echo 'test'
+            echo 'testtt'
           }
         }
 
         stage('Test1') {
           steps {
-            echo 'tee'
+            echo 'tete'
           }
         }
 
@@ -26,7 +26,14 @@ pipeline {
 
     stage('Deploy') {
       steps {
+        input(message: 'deploy?', ok: 'deploy')
         echo 'deploy'
+      }
+    }
+
+    stage('Notify') {
+      steps {
+        echo 'done'
       }
     }
 
