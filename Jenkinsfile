@@ -31,11 +31,7 @@ pipeline {
       }
     }
 
-    stage('Notify') {
-      steps {
-        echo 'done'
-      }
-    }
+   
 
   }
 }
